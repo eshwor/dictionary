@@ -1,0 +1,70 @@
+//All the Variables
+$skyblue : #128dc0;
+$skyblue-dark : #224959;
+$white : #FFFFFF;
+$black : #000000;
+
+.main-wrapper {
+  margin: 0 auto;
+  border: 0.5rem solid #DDD;
+  max-width: 50rem;
+  padding: 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: calc(1rem + 2vw);
+    color: $skyblue;
+  }
+
+
+  input {
+    background-color: $skyblue-dark;
+    border:none;
+    width: 100%;
+    max-width: 26rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    color: $white;
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    border-radius: 75%;
+    display: inline-block;
+    vertical-align: super;
+    margin: 0 0.3rem;
+    background-color: $skyblue;
+    color: $white;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+      background-color: $skyblue-dark;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    background-color: $skyblue;
+    padding: 0.5rem;
+    max-width: 41rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    color: $white;
+    border-bottom: 1px solid $white;
+    cursor: pointer;
+    text-align: left;
+
+    &:hover {
+      background-color: darken($skyblue, 20%);
+    }
+  }
+
+
+
+}//main wrapper End

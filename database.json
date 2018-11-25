@@ -1,26 +1,27 @@
 [
   {
-    "name" : "Josh",
-    "lastname" : "Khatri"
+    "word" : "Apple",
+    "nepaliWord" : "स्याऊ",
+    "definition" : "the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh"
   },
   {
-    "name" : "Hari",
-    "lastname" : "Bhusal"
+    "word" : "Orange",
+    "nepaliWord" : "सुन्तला",
+    "definition" : "the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh"
   },
   {
-    "name" : "Krisnha",
-    "lastname" : "Kumar"
+    "word" : "Pineapple",
+    "nepaliWord" : "अनानास",
+    "definition" : "the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh"
   },
   {
-    "name" : "Lal",
-    "lastname" : "Bahadur"
+    "word" : "Grape",
+    "nepaliWord" : "अंगूर",
+    "definition" : "the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh"
   },
   {
-    "name" : "Mula",
-    "lastname" : "Ranavat"
-  },
-  {
-    "name" : "Joe",
-    "lastname" : "Matric"
+    "word" : "Banana",
+    "nepaliWord" : "केाना",
+    "definition" : "the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh"
   }
 ]

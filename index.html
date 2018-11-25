@@ -2,54 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Live Search Data</title>
+    <title>Personal Dictionary</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style media="screen">
-      .wrapper {
-        margin: 0 auto;
-        border: 1px solid #DDD;
-        width: 50%;
-        padding: 2rem;
-      }
-      #search {
-        padding: 1rem;
-      }
-
-      #result {}
-      .lin-class {}
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="wrapper">
-      <h1>Live Search Data</h1>
-      <input type="text" id="search" name="search" value="" placeholder="Search the result"><br><br><br>
 
-      <ul class="list-group" id="result"></ul>
+    <div class="main-wrapper">
+      <h1>Personal Dictionary</h1>
+      <input type="text" id="search" name="search" value="" placeholder="Search the words">
+      <button type="button" name="button" id="search-btn">Search</button>
+      <button type="button" name="button" id="clear-btn">Clear</button>
+      <ul class="" id="result"></ul>
+
     </div>
-    <script type="text/javascript">
 
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("GET","https://raw.githubusercontent.com/eshwor/javascript-package/master/myJson.json",true);
-    xmlhttp.onload = function(){
-      if (this.readyState == 4 && this.status == 200) {
-      var result = JSON.parse(this.responseText);
-          jQuery.ajaxSetup({ cache: false });
-          jQuery('#search').keydown(function(){
-            jQuery('#result').html('');
-            var searchField = jQuery('#search').val();
-            var expression = new RegExp(searchField, "i");
-
-              jQuery.each(result, function(key, value){
-                if(value.name.search(expression) != -1 ){
-                  $('#result').append('<li class="list-group-item link-class">' + value.name +'</li>');
-                }
-              });
-          });
-      }
-    };
-    xmlhttp.send();
-
-    </script>
-
+    <script src="apps.js"></script>
   </body>
 </html>
