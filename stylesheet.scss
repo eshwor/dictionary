@@ -60,8 +60,26 @@ $black : #000000;
     cursor: pointer;
     text-align: left;
 
+    &:nth-child(even){
+      background-color: $skyblue-dark;
+      &:hover {
+        background-color: darken($skyblue-dark, 100%);
+      }
+    }
+
     &:hover {
       background-color: darken($skyblue, 20%);
+    }
+  }
+
+  .display-me {
+    display: none;
+    position: relative;
+    &.active {
+      width: 100%;
+      display: block;
+
+      transition: all 1s ease-in-out;
     }
   }
 

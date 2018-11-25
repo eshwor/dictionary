@@ -12,17 +12,21 @@
                 var expression = new RegExp(searchField, "i");
 
                   jQuery.each(result, function(key, value){
-                    if(value.name.search(expression) != -1 ){
-                      $('#result').append('<li class="list">' + value.name +'</li>');
+                    if(value.word.search(expression) != -1 ){
+
+                      jQuery('#search-btn').click(function(){
+                        jQuery('.display-me').addClass('active');
+                      });
+
+                      $('#result').append('<li class="list">' + value.word + " " + '<span class="display-me">' + value.nepaliWord + "  - :  " + value.definition + '</span>' + '</li>');
                     }
                   });
             });
 
-            jQuery('#search-btn').click(function(){
-              alert("This function is not activated yet !");
-            });
+
             jQuery('#clear-btn').click(function(){
                 jQuery('.list').remove();
+                jQuery('input:text').val('');
             });
 
 
